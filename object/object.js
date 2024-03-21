@@ -17,7 +17,7 @@ console.log(`Cadastro: ${pessoa1.nome} - ${pessoa1.cpf} - ${pessoa1.endereco.nom
 console.log(`Cadastro: ${pessoa2.nome} - ${pessoa2.cpf}`);
 
 //for para percorrer o object
-//para o obejct aparecer você vai precisar abri-lo
+//para o obejct do endereco aparecer você vai precisar abri-lo
 for (let key in pessoa1){
     console.log(key + ' - ' + pessoa1[key]);
 }
