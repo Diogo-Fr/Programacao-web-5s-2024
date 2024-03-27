@@ -1,25 +1,22 @@
 function verificarNumeroPrimo(n){
     if (n <= 1){
-        console.log('false');
         return false;
     }
     for(let i = 2; i <= Math.sqrt(n); i++){
         if (n % i === 0){
-            console.log('false');
             return false;
         }
     }
-    console.log('true');
     return true;
 }
 
-verificarNumeroPrimo(0); //false
-verificarNumeroPrimo(1); //false
-verificarNumeroPrimo(2); //true
-verificarNumeroPrimo(3); //true
-verificarNumeroPrimo(7); //true
-verificarNumeroPrimo(83); //true
-verificarNumeroPrimo(100); //false
-verificarNumeroPrimo(991); //true
-verificarNumeroPrimo(104729); //true
-verificarNumeroPrimo(14348907); //false
+console.log(verificarNumeroPrimo(0)); //false
+console.log(verificarNumeroPrimo(1)); //false
+console.log(verificarNumeroPrimo(2)); //true
+console.log(verificarNumeroPrimo(3)); //true
+console.log(verificarNumeroPrimo(7)); //true
+console.log(verificarNumeroPrimo(83)); //true
+console.log(verificarNumeroPrimo(100)); //false
+console.log(verificarNumeroPrimo(991)); //true
+console.log(verificarNumeroPrimo(104729)); //true
+console.log(verificarNumeroPrimo(14348907)); //false
